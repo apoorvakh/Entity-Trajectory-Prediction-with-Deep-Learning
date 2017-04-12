@@ -1,0 +1,1510 @@
+
+Predicted value:  [[ 124.13864748]
+ [ 124.49705262]] Target:  [221, 1058]
+iter 0, loss: 27.135667
+
+Predicted value:  [[ 204.94505374]
+ [ 205.30345888]] Target:  [221, 1059]
+
+Predicted value:  [[ 220.99975611]
+ [ 266.8399641 ]] Target:  [221, 1059]
+
+Predicted value:  [[ 218.99995123]
+ [ 318.56141278]] Target:  [219, 1059]
+
+Predicted value:  [[ 219.        ]
+ [ 364.05438102]] Target:  [219, 1059]
+
+Predicted value:  [[ 219.        ]
+ [ 405.14078452]] Target:  [219, 1059]
+
+Predicted value:  [[ 219.        ]
+ [ 442.89682505]] Target:  [219, 1059]
+
+Predicted value:  [[ 219.        ]
+ [ 478.02106784]] Target:  [219, 1060]
+
+Predicted value:  [[ 219.        ]
+ [ 510.99742572]] Target:  [219, 1060]
+
+Predicted value:  [[ 219.        ]
+ [ 542.17751347]] Target:  [219, 1060]
+
+Predicted value:  [[ 219.        ]
+ [ 571.82634783]] Target:  [219, 1060]
+
+Predicted value:  [[ 219.        ]
+ [ 600.14955579]] Target:  [219, 1060]
+
+Predicted value:  [[ 216.99995833]
+ [ 627.31048892]] Target:  [217, 1060]
+
+Predicted value:  [[ 217.        ]
+ [ 653.44147484]] Target:  [217, 1060]
+
+Predicted value:  [[ 217.        ]
+ [ 678.65148849]] Target:  [217, 1061]
+
+Predicted value:  [[ 217.        ]
+ [ 703.03154432]] Target:  [217, 1061]
+
+Predicted value:  [[ 217.        ]
+ [ 726.65858594]] Target:  [217, 1061]
+
+Predicted value:  [[ 217.        ]
+ [ 749.59835547]] Target:  [217, 1061]
+
+Predicted value:  [[ 217.        ]
+ [ 771.90755176]] Target:  [217, 1062]
+
+Predicted value:  [[ 217.        ]
+ [ 793.63548163]] Target:  [217, 1062]
+
+Predicted value:  [[ 217.       ]
+ [ 814.8253426]] Target:  [217, 1062]
+
+Predicted value:  [[ 214.99996441]
+ [ 835.51523291]] Target:  [215, 1062]
+
+Predicted value:  [[ 215.        ]
+ [ 855.73895643]] Target:  [215, 1062]
+
+Predicted value:  [[ 215.        ]
+ [ 875.52667123]] Target:  [215, 1062]
+
+Predicted value:  [[ 215.        ]
+ [ 894.90541748]] Target:  [215, 1062]
+
+Predicted value:  [[ 215.       ]
+ [ 913.8995508]] Target:  [215, 1062]
+
+Predicted value:  [[ 215.       ]
+ [ 932.5311013]] Target:  [215, 1062]
+
+Predicted value:  [[ 215.        ]
+ [ 950.82007299]] Target:  [215, 1064]
+
+Predicted value:  [[ 215.        ]
+ [ 968.78469547]] Target:  [215, 1064]
+
+Predicted value:  [[ 215.        ]
+ [ 986.44163673]] Target:  [215, 1065]
+
+Predicted value:  [[  212.99996961]
+ [ 1003.8061843 ]] Target:  [213, 1065]
+
+Predicted value:  [[  213.        ]
+ [ 1020.89240016]] Target:  [213, 1065]
+
+Predicted value:  [[  213.        ]
+ [ 1037.71325406]] Target:  [213, 1065]
+
+Predicted value:  [[  213.       ]
+ [ 1054.2807387]] Target:  [213, 1065]
+
+Predicted value:  [[  213.        ]
+ [ 1064.61233278]] Target:  [213, 1065]
+
+Predicted value:  [[  213.        ]
+ [ 1064.99256736]] Target:  [213, 1065]
+
+Predicted value:  [[  213.       ]
+ [ 1064.9998575]] Target:  [213, 1065]
+
+Predicted value:  [[  213.        ]
+ [ 1064.99999727]] Target:  [213, 1065]
+
+Predicted value:  [[  213.        ]
+ [ 1064.99999995]] Target:  [213, 1065]
+
+Predicted value:  [[  213.        ]
+ [ 1066.94295999]] Target:  [213, 1067]
+
+Predicted value:  [[  213.        ]
+ [ 1065.05604445]] Target:  [213, 1065]
+
+Predicted value:  [[  215.00002594]
+ [ 1062.08714296]] Target:  [215, 1062]
+
+Predicted value:  [[  217.00002213]
+ [ 1060.05918625]] Target:  [217, 1060]
+
+Predicted value:  [[  217.        ]
+ [ 1058.05875755]] Target:  [217, 1058]
+
+Predicted value:  [[  219.00001887]
+ [ 1056.05886207]] Target:  [219, 1056]
+
+Predicted value:  [[  221.00001608]
+ [ 1053.08807788]] Target:  [221, 1053]
+
+Predicted value:  [[  221.        ]
+ [ 1049.11847995]] Target:  [221, 1049]
+
+Predicted value:  [[  223.0000137 ]
+ [ 1047.06085918]] Target:  [223, 1047]
+
+Predicted value:  [[  225.00001166]
+ [ 1044.08933708]] Target:  [225, 1044]
+
+Predicted value:  [[  225.        ]
+ [ 1042.06065623]] Target:  [225, 1042]
+
+Predicted value:  [[  227.00000992]
+ [ 1040.06019987]] Target:  [227, 1040]
+
+Predicted value:  [[  229.00000843]
+ [ 1035.15083099]] Target:  [229, 1035]
+
+Predicted value:  [[  229.        ]
+ [ 1033.06283932]] Target:  [229, 1033]
+
+Predicted value:  [[  231.00000716]
+ [ 1031.06117438]] Target:  [231, 1031]
+
+Predicted value:  [[  233.00000608]
+ [ 1028.0914505 ]] Target:  [233, 1028]
+
+Predicted value:  [[  235.00000516]
+ [ 1026.06213086]] Target:  [235, 1026]
+
+Predicted value:  [[  237.00000437]
+ [ 1024.06164773]] Target:  [237, 1024]
+
+Predicted value:  [[  239.0000037 ]
+ [ 1022.06175309]] Target:  [239, 1022]
+
+Predicted value:  [[  241.00000313]
+ [ 1019.09236113]] Target:  [241, 1019]
+
+Predicted value:  [[  243.00000264]
+ [ 1017.06276067]] Target:  [243, 1017]
+
+Predicted value:  [[  245.00000223]
+ [ 1015.06226574]] Target:  [245, 1015]
+
+Predicted value:  [[  247.00000188]
+ [ 1013.06237125]] Target:  [247, 1013]
+
+Predicted value:  [[  249.00000158]
+ [ 1010.09327652]] Target:  [249, 1010]
+
+Predicted value:  [[  251.00000133]
+ [ 1008.06339351]] Target:  [251, 1008]
+
+Predicted value:  [[  253.00000112]
+ [ 1006.06288657]] Target:  [253, 1006]
+
+Predicted value:  [[  254.00000053]
+ [ 1004.06299222]] Target:  [254, 1004]
+
+Predicted value:  [[  256.00000089]
+ [ 1001.09419594]] Target:  [256, 1001]
+
+Predicted value:  [[ 258.00000075]
+ [ 999.06402935]] Target:  [258, 999]
+
+Predicted value:  [[ 260.00000063]
+ [ 997.06351022]] Target:  [260, 997]
+
+Predicted value:  [[ 262.00000052]
+ [ 994.0949431 ]] Target:  [262, 994]
+
+Predicted value:  [[ 264.00000043]
+ [ 992.06454605]] Target:  [264, 992]
+
+Predicted value:  [[ 266.00000036]
+ [ 990.06401692]] Target:  [266, 990]
+
+Predicted value:  [[ 268.0000003 ]
+ [ 988.06412279]] Target:  [268, 988]
+
+Predicted value:  [[ 270.00000025]
+ [ 985.09586945]] Target:  [270, 985]
+
+Predicted value:  [[ 272.0000002 ]
+ [ 983.06518731]] Target:  [272, 983]
+
+Predicted value:  [[ 276.00000019]
+ [ 983.00140176]] Target:  [276, 983]
+
+Predicted value:  [[ 281.99999997]
+ [ 979.12710192]] Target:  [282, 979]
+
+Predicted value:  [[ 287.99999999]
+ [ 976.09848762]] Target:  [288, 976]
+
+Predicted value:  [[ 294.        ]
+ [ 974.06609472]] Target:  [294, 974]
+
+Predicted value:  [[ 302.        ]
+ [ 972.06550693]] Target:  [302, 972]
+
+Predicted value:  [[ 302.        ]
+ [ 970.06561241]] Target:  [302, 970]
+
+Predicted value:  [[ 302.        ]
+ [ 970.00143704]] Target:  [302, 970]
+
+Predicted value:  [[ 302.        ]
+ [ 967.09665316]] Target:  [302, 967]
+
+Predicted value:  [[ 302.        ]
+ [ 967.00212602]] Target:  [302, 967]
+
+Predicted value:  [[ 302.        ]
+ [ 965.06458553]] Target:  [302, 965]
+
+Predicted value:  [[ 302.        ]
+ [ 965.00142336]] Target:  [302, 965]
+
+Predicted value:  [[ 304.        ]
+ [ 963.06468103]] Target:  [304, 963]
+
+Predicted value:  [[ 306.        ]
+ [ 963.00142819]] Target:  [306, 963]
+
+Predicted value:  [[ 310.        ]
+ [ 960.09736048]] Target:  [310, 960]
+
+Predicted value:  [[ 312.      ]
+ [ 960.002159]] Target:  [312, 960]
+
+Predicted value:  [[ 316.        ]
+ [ 958.06505852]] Target:  [316, 958]
+
+Predicted value:  [[ 318.        ]
+ [ 958.00144544]] Target:  [318, 958]
+
+Predicted value:  [[ 320.        ]
+ [ 956.06515396]] Target:  [320, 956]
+
+Predicted value:  [[ 324.        ]
+ [ 956.00145031]] Target:  [324, 956]
+
+Predicted value:  [[ 326.        ]
+ [ 954.06526541]] Target:  [326, 954]
+
+Predicted value:  [[ 330.        ]
+ [ 954.00145555]] Target:  [330, 954]
+
+Predicted value:  [[ 332.        ]
+ [ 951.09823769]] Target:  [332, 951]
+
+Predicted value:  [[ 334.        ]
+ [ 951.00220025]] Target:  [334, 951]
+
+Predicted value:  [[ 338.        ]
+ [ 949.06564458]] Target:  [338, 949]
+
+Predicted value:  [[ 340.        ]
+ [ 949.00147304]] Target:  [340, 949]
+
+Predicted value:  [[ 343.        ]
+ [ 947.06573991]] Target:  [343, 947]
+iter 100, loss: 58.894707
+
+Predicted value:  [[ 345.        ]
+ [ 947.00147797]] Target:  [345, 947]
+
+Predicted value:  [[ 347.        ]
+ [ 945.06585174]] Target:  [347, 945]
+
+Predicted value:  [[ 351.        ]
+ [ 945.00148328]] Target:  [351, 945]
+
+Predicted value:  [[ 352.99990794]
+ [ 929.69889215]] Target:  [353, 942]
+
+Predicted value:  [[ 357.        ]
+ [ 941.30327435]] Target:  [357, 942]
+
+Predicted value:  [[ 359.        ]
+ [ 940.05323964]] Target:  [359, 940]
+
+Predicted value:  [[ 361.        ]
+ [ 940.00128515]] Target:  [361, 940]
+
+Predicted value:  [[ 365.      ]
+ [ 938.070195]] Target:  [365, 938]
+
+Predicted value:  [[ 367.        ]
+ [ 938.00169751]] Target:  [367, 938]
+
+Predicted value:  [[ 371.        ]
+ [ 936.07031935]] Target:  [371, 936]
+
+Predicted value:  [[ 373.        ]
+ [ 936.00170359]] Target:  [373, 936]
+
+Predicted value:  [[ 375.        ]
+ [ 933.10582321]] Target:  [375, 933]
+
+Predicted value:  [[ 379.        ]
+ [ 933.00257416]] Target:  [379, 933]
+
+Predicted value:  [[ 381.        ]
+ [ 931.07071288]] Target:  [381, 931]
+
+Predicted value:  [[ 385.       ]
+ [ 931.0017232]] Target:  [385, 931]
+
+Predicted value:  [[ 387.        ]
+ [ 931.00004199]] Target:  [387, 931]
+
+Predicted value:  [[ 389.        ]
+ [ 929.07076567]] Target:  [389, 929]
+
+Predicted value:  [[ 393.        ]
+ [ 929.00172759]] Target:  [393, 929]
+
+Predicted value:  [[ 395.        ]
+ [ 926.10655453]] Target:  [395, 926]
+
+Predicted value:  [[ 399.        ]
+ [ 926.00261184]] Target:  [399, 926]
+
+Predicted value:  [[ 401.        ]
+ [ 924.07120158]] Target:  [401, 924]
+
+Predicted value:  [[ 403.        ]
+ [ 924.00174841]] Target:  [403, 924]
+
+Predicted value:  [[ 406.99999999]
+ [ 922.07129533]] Target:  [407, 922]
+
+Predicted value:  [[ 409.        ]
+ [ 922.00175386]] Target:  [409, 922]
+
+Predicted value:  [[ 412.99999998]
+ [ 922.00004314]] Target:  [413, 922]
+
+Predicted value:  [[ 411.00000001]
+ [ 922.00000106]] Target:  [411, 922]
+
+Predicted value:  [[ 411.        ]
+ [ 922.00000003]] Target:  [411, 922]
+
+Predicted value:  [[ 411.]
+ [ 922.]] Target:  [411, 922]
+
+Predicted value:  [[ 411.        ]
+ [ 923.92863286]] Target:  [411, 924]
+
+Predicted value:  [[ 415.99999996]
+ [ 922.06971572]] Target:  [416, 922]
+
+Predicted value:  [[ 422.99999964]
+ [ 920.07331981]] Target:  [423, 920]
+
+Predicted value:  [[ 428.9999996 ]
+ [ 917.10959274]] Target:  [429, 917]
+
+Predicted value:  [[ 435.99999886]
+ [ 915.07471323]] Target:  [436, 915]
+
+Predicted value:  [[ 442.99999805]
+ [ 913.07397059]] Target:  [443, 913]
+
+Predicted value:  [[ 449.99999683]
+ [ 912.03791952]] Target:  [450, 912]
+
+Predicted value:  [[ 452.76802884]
+ [ 910.20309249]] Target:  [452, 909]
+
+Predicted value:  [[ 455.99999823]
+ [ 909.03034042]] Target:  [456, 909]
+
+Predicted value:  [[ 458.99999844]
+ [ 909.00076519]] Target:  [459, 909]
+
+Predicted value:  [[ 461.99999825]
+ [ 909.0000193 ]] Target:  [462, 909]
+
+Predicted value:  [[ 464.99999804]
+ [ 909.00000049]] Target:  [465, 909]
+
+Predicted value:  [[ 468.99999682]
+ [ 909.00000001]] Target:  [469, 909]
+
+Predicted value:  [[ 470.99999833]
+ [ 909.        ]] Target:  [471, 909]
+
+Predicted value:  [[ 474.99999598]
+ [ 908.03645256]] Target:  [475, 908]
+
+Predicted value:  [[ 477.99999666]
+ [ 908.00091975]] Target:  [478, 908]
+
+Predicted value:  [[ 481.99999468]
+ [ 908.00002321]] Target:  [482, 908]
+
+Predicted value:  [[ 483.99999722]
+ [ 907.0364676 ]] Target:  [484, 907]
+
+Predicted value:  [[ 487.99999341]
+ [ 907.00092053]] Target:  [488, 907]
+
+Predicted value:  [[ 490.99999458]
+ [ 907.00002324]] Target:  [491, 907]
+
+Predicted value:  [[ 493.99999406]
+ [ 907.00000059]] Target:  [494, 907]
+
+Predicted value:  [[ 497.99999071]
+ [ 907.00000001]] Target:  [498, 907]
+
+Predicted value:  [[ 500.9999924 ]
+ [ 906.03648148]] Target:  [501, 906]
+
+Predicted value:  [[ 503.99999172]
+ [ 906.00092129]] Target:  [504, 906]
+
+Predicted value:  [[ 506.99999099]
+ [ 906.00002327]] Target:  [507, 906]
+
+Predicted value:  [[ 510.9999861 ]
+ [ 906.00000059]] Target:  [511, 906]
+
+Predicted value:  [[ 513.9999887 ]
+ [ 906.00000001]] Target:  [514, 906]
+
+Predicted value:  [[ 516.99998777]
+ [ 905.03649594]] Target:  [517, 905]
+
+Predicted value:  [[ 518.99999156]
+ [ 905.00092206]] Target:  [519, 905]
+
+Predicted value:  [[ 522.99998066]
+ [ 904.03653373]] Target:  [523, 904]
+
+Predicted value:  [[ 524.99998999]
+ [ 904.00092342]] Target:  [525, 904]
+
+Predicted value:  [[ 528.99997719]
+ [ 904.00002334]] Target:  [529, 904]
+
+Predicted value:  [[ 531.9999816 ]
+ [ 904.00000059]] Target:  [532, 904]
+
+Predicted value:  [[ 534.99998024]
+ [ 904.00000001]] Target:  [535, 904]
+
+Predicted value:  [[ 537.9999788]
+ [ 904.       ]] Target:  [538, 904]
+
+Predicted value:  [[ 541.99996807]
+ [ 904.        ]] Target:  [542, 904]
+
+Predicted value:  [[ 545.99996403]
+ [ 904.        ]] Target:  [546, 904]
+
+Predicted value:  [[ 551.99990557]
+ [ 902.07312776]] Target:  [552, 902]
+
+Predicted value:  [[ 557.99988589]
+ [ 899.11193005]] Target:  [558, 899]
+
+Predicted value:  [[ 563.99986316]
+ [ 897.07637136]] Target:  [564, 897]
+
+Predicted value:  [[ 570.99976422]
+ [ 895.07559203]] Target:  [571, 895]
+
+Predicted value:  [[ 571.        ]
+ [ 895.00192905]] Target:  [571, 895]
+
+Predicted value:  [[ 572.99995833]
+ [ 895.00004923]] Target:  [573, 895]
+
+Predicted value:  [[ 573.        ]
+ [ 895.00000126]] Target:  [573, 895]
+
+Predicted value:  [[ 574.9999573 ]
+ [ 895.00000003]] Target:  [575, 895]
+
+Predicted value:  [[ 575.]
+ [ 895.]] Target:  [575, 895]
+
+Predicted value:  [[ 576.99995626]
+ [ 896.92623948]] Target:  [577, 897]
+
+Predicted value:  [[ 578.9999552 ]
+ [ 895.07198322]] Target:  [579, 895]
+
+Predicted value:  [[ 582.99990159]
+ [ 895.00184323]] Target:  [583, 895]
+
+Predicted value:  [[ 586.99989204]
+ [ 895.0000472 ]] Target:  [587, 895]
+
+Predicted value:  [[ 588.99994473]
+ [ 895.00000121]] Target:  [589, 895]
+
+Predicted value:  [[ 592.99987914]
+ [ 895.00000003]] Target:  [593, 895]
+
+Predicted value:  [[ 596.999868]
+ [ 895.      ]] Target:  [597, 895]
+
+Predicted value:  [[ 598.99993249]
+ [ 895.        ]] Target:  [599, 895]
+
+Predicted value:  [[ 602.999853]
+ [ 895.      ]] Target:  [603, 895]
+
+Predicted value:  [[ 606.99984009]
+ [ 895.        ]] Target:  [607, 895]
+
+Predicted value:  [[ 609.99987429]
+ [ 895.        ]] Target:  [610, 895]
+
+Predicted value:  [[ 611.99991443]
+ [ 895.        ]] Target:  [612, 895]
+
+Predicted value:  [[ 615.99981456]
+ [ 895.        ]] Target:  [616, 895]
+
+Predicted value:  [[ 619.99979921]
+ [ 895.        ]] Target:  [620, 895]
+
+Predicted value:  [[ 621.99989753]
+ [ 895.        ]] Target:  [622, 895]
+
+Predicted value:  [[ 625.99977872]
+ [ 895.        ]] Target:  [626, 895]
+
+Predicted value:  [[ 629.99976123]
+ [ 895.        ]] Target:  [630, 895]
+
+Predicted value:  [[ 633.99974272]
+ [ 895.        ]] Target:  [634, 895]
+
+Predicted value:  [[ 635.99986886]
+ [ 892.11117614]] Target:  [636, 892]
+
+Predicted value:  [[ 639.99971812]
+ [ 892.00285802]] Target:  [640, 892]
+
+Predicted value:  [[ 643.99969721]
+ [ 892.00007347]] Target:  [644, 892]
+
+Predicted value:  [[ 645.99984577]
+ [ 892.00000189]] Target:  [646, 892]
+
+Predicted value:  [[ 649.99966948]
+ [ 892.00000005]] Target:  [650, 892]
+
+Predicted value:  [[ 653.99964597]
+ [ 892.        ]] Target:  [654, 892]
+
+Predicted value:  [[ 655.9998198]
+ [ 892.       ]] Target:  [656, 892]
+
+Predicted value:  [[ 659.9996149]
+ [ 892.       ]] Target:  [660, 892]
+iter 200, loss: 22.070231
+
+Predicted value:  [[ 663.99958861]
+ [ 892.        ]] Target:  [664, 892]
+
+Predicted value:  [[ 667.99956104]
+ [ 892.        ]] Target:  [668, 892]
+
+Predicted value:  [[ 669.99977678]
+ [ 892.        ]] Target:  [670, 892]
+
+Predicted value:  [[ 673.99952472]
+ [ 892.        ]] Target:  [674, 892]
+
+Predicted value:  [[ 677.99949409]
+ [ 892.        ]] Target:  [678, 892]
+
+Predicted value:  [[ 679.99974289]
+ [ 892.        ]] Target:  [680, 892]
+
+Predicted value:  [[ 683.99945385]
+ [ 892.        ]] Target:  [684, 892]
+
+Predicted value:  [[ 687.99941999]
+ [ 892.        ]] Target:  [688, 892]
+
+Predicted value:  [[ 691.99938464]
+ [ 892.        ]] Target:  [692, 892]
+
+Predicted value:  [[ 693.99968751]
+ [ 890.07424873]] Target:  [694, 890]
+
+Predicted value:  [[ 697.99933832]
+ [ 890.00191205]] Target:  [698, 890]
+
+Predicted value:  [[ 698.99983378]
+ [ 890.00004924]] Target:  [699, 890]
+
+Predicted value:  [[ 702.99929701]
+ [ 890.00000127]] Target:  [703, 890]
+
+Predicted value:  [[ 704.99964318]
+ [ 888.07436519]] Target:  [705, 888]
+
+Predicted value:  [[ 708.99924604]
+ [ 888.00191838]] Target:  [709, 888]
+
+Predicted value:  [[ 712.99920337]
+ [ 888.00004949]] Target:  [713, 888]
+
+Predicted value:  [[ 714.99959587]
+ [ 888.00000128]] Target:  [715, 888]
+
+Predicted value:  [[ 718.99914771]
+ [ 886.07448168]] Target:  [719, 886]
+
+Predicted value:  [[ 720.99956772]
+ [ 886.00192473]] Target:  [721, 886]
+
+Predicted value:  [[ 724.99908928]
+ [ 886.00004974]] Target:  [725, 886]
+
+Predicted value:  [[ 728.99904048]
+ [ 886.00000129]] Target:  [729, 886]
+
+Predicted value:  [[ 730.99951357]
+ [ 883.11209348]] Target:  [731, 883]
+
+Predicted value:  [[ 734.998977  ]
+ [ 883.00290803]] Target:  [735, 883]
+
+Predicted value:  [[ 736.99948148]
+ [ 883.00007544]] Target:  [737, 883]
+
+Predicted value:  [[ 740.99891055]
+ [ 883.00000196]] Target:  [741, 883]
+
+Predicted value:  [[ 744.99885517]
+ [ 881.07486074]] Target:  [745, 881]
+
+Predicted value:  [[ 746.99941999]
+ [ 881.00194547]] Target:  [747, 881]
+
+Predicted value:  [[ 750.99878333]
+ [ 881.00005056]] Target:  [751, 881]
+
+Predicted value:  [[ 752.99938368]
+ [ 881.00000131]] Target:  [753, 881]
+
+Predicted value:  [[ 756.99870831]
+ [ 879.07497748]] Target:  [757, 879]
+
+Predicted value:  [[ 758.99934581]
+ [ 879.00195188]] Target:  [759, 879]
+
+Predicted value:  [[ 762.99863009]
+ [ 879.00005081]] Target:  [763, 879]
+
+Predicted value:  [[ 766.99856506]
+ [ 879.00000132]] Target:  [767, 879]
+
+Predicted value:  [[ 768.99927356]
+ [ 877.07509429]] Target:  [769, 877]
+
+Predicted value:  [[ 772.99848103]
+ [ 877.00195831]] Target:  [773, 877]
+
+Predicted value:  [[ 774.99923111]
+ [ 877.00005107]] Target:  [775, 877]
+
+Predicted value:  [[ 778.99839351]
+ [ 877.00000133]] Target:  [779, 877]
+
+Predicted value:  [[ 782.99832086]
+ [ 874.11301334]] Target:  [783, 874]
+
+Predicted value:  [[ 784.99915037]
+ [ 874.00295863]] Target:  [785, 874]
+
+Predicted value:  [[ 787.99869471]
+ [ 874.00007746]] Target:  [788, 874]
+
+Predicted value:  [[ 789.99911991]
+ [ 874.00000203]] Target:  [790, 874]
+
+Predicted value:  [[ 793.99816438]
+ [ 872.0754744 ]] Target:  [794, 872]
+
+Predicted value:  [[ 797.99808472]
+ [ 872.00197929]] Target:  [798, 872]
+
+Predicted value:  [[ 799.99903128]
+ [ 872.00005191]] Target:  [800, 872]
+
+Predicted value:  [[ 803.99798228]
+ [ 872.00000136]] Target:  [804, 872]
+
+Predicted value:  [[ 805.99897952]
+ [ 870.07559146]] Target:  [806, 870]
+
+Predicted value:  [[ 809.99787593]
+ [ 870.00198578]] Target:  [810, 870]
+
+Predicted value:  [[ 811.99892589]
+ [ 870.00005217]] Target:  [812, 870]
+
+Predicted value:  [[ 815.99776579]
+ [ 870.00000137]] Target:  [816, 870]
+
+Predicted value:  [[ 819.99767462]
+ [ 868.07570859]] Target:  [820, 868]
+
+Predicted value:  [[ 821.99882453]
+ [ 868.00199228]] Target:  [822, 868]
+
+Predicted value:  [[ 825.9975578 ]
+ [ 868.00005243]] Target:  [826, 868]
+
+Predicted value:  [[ 827.99876549]
+ [ 868.00000138]] Target:  [828, 868]
+
+Predicted value:  [[ 831.99743674]
+ [ 865.11393573]] Target:  [832, 865]
+
+Predicted value:  [[ 835.9973366 ]
+ [ 865.00300984]] Target:  [836, 865]
+
+Predicted value:  [[ 837.99865418]
+ [ 865.00007951]] Target:  [838, 865]
+
+Predicted value:  [[ 841.99720865]
+ [ 865.0000021 ]] Target:  [842, 865]
+
+Predicted value:  [[ 843.99858949]
+ [ 863.07608975]] Target:  [844, 863]
+
+Predicted value:  [[ 847.9970762 ]
+ [ 863.00201351]] Target:  [848, 863]
+
+Predicted value:  [[ 851.99696672]
+ [ 863.00005328]] Target:  [852, 863]
+
+Predicted value:  [[ 853.9984678 ]
+ [ 863.00000141]] Target:  [854, 863]
+
+Predicted value:  [[ 857.99682721]
+ [ 861.07620712]] Target:  [858, 861]
+
+Predicted value:  [[ 859.99839724]
+ [ 861.00202008]] Target:  [860, 861]
+
+Predicted value:  [[ 863.99668293]
+ [ 861.00005355]] Target:  [864, 861]
+
+Predicted value:  [[ 867.99656371]
+ [ 861.00000142]] Target:  [868, 861]
+
+Predicted value:  [[ 869.99826478]
+ [ 858.11468429]] Target:  [870, 858]
+
+Predicted value:  [[ 871.99825032]
+ [ 856.07965372]] Target:  [872, 856]
+
+Predicted value:  [[ 873.9982351 ]
+ [ 854.07884851]] Target:  [874, 854]
+
+Predicted value:  [[ 875.99821978]
+ [ 852.07895499]] Target:  [876, 852]
+
+Predicted value:  [[ 876.99910743]
+ [ 849.11777706]] Target:  [877, 849]
+
+Predicted value:  [[ 878.99820089]
+ [ 849.00316365]] Target:  [879, 849]
+
+Predicted value:  [[ 882.9962795 ]
+ [ 847.07732491]] Target:  [883, 847]
+
+Predicted value:  [[ 884.99812124]
+ [ 847.00208059]] Target:  [885, 847]
+
+Predicted value:  [[ 888.99611916]
+ [ 845.07741404]] Target:  [889, 845]
+
+Predicted value:  [[ 890.99804045]
+ [ 845.00208653]] Target:  [891, 845]
+
+Predicted value:  [[ 894.9959543 ]
+ [ 843.07753251]] Target:  [895, 843]
+
+Predicted value:  [[ 896.99795738]
+ [ 843.00209327]] Target:  [897, 843]
+
+Predicted value:  [[ 898.99794147]
+ [ 840.11664688]] Target:  [899, 840]
+
+Predicted value:  [[ 902.99575044]
+ [ 840.00316133]] Target:  [903, 840]
+
+Predicted value:  [[ 904.99785467]
+ [ 838.07794658]] Target:  [905, 838]
+
+Predicted value:  [[ 908.99557546]
+ [ 838.00211606]] Target:  [909, 838]
+
+Predicted value:  [[ 910.9977665 ]
+ [ 836.07803679]] Target:  [911, 836]
+
+Predicted value:  [[ 914.9953958 ]
+ [ 836.00212209]] Target:  [915, 836]
+
+Predicted value:  [[ 916.99767599]
+ [ 834.07815559]] Target:  [917, 834]
+
+Predicted value:  [[ 920.99521143]
+ [ 834.00212891]] Target:  [921, 834]
+
+Predicted value:  [[ 922.99758309]
+ [ 831.11758169]] Target:  [923, 831]
+
+Predicted value:  [[ 926.99502228]
+ [ 829.08171159]] Target:  [927, 829]
+
+Predicted value:  [[ 928.9974878 ]
+ [ 827.08085906]] Target:  [929, 827]
+
+Predicted value:  [[ 932.99482832]
+ [ 824.12054397]] Target:  [933, 824]
+
+Predicted value:  [[ 934.99739007]
+ [ 824.00332083]] Target:  [935, 824]
+
+Predicted value:  [[ 938.99462951]
+ [ 822.07910615]] Target:  [939, 822]
+
+Predicted value:  [[ 940.99728991]
+ [ 820.08132533]] Target:  [941, 820]
+
+Predicted value:  [[ 944.99442579]
+ [ 818.0815163 ]] Target:  [945, 818]
+
+Predicted value:  [[ 946.99718727]
+ [ 815.12155477]] Target:  [947, 815]
+
+Predicted value:  [[ 950.99421714]
+ [ 815.00337926]] Target:  [951, 815]
+
+Predicted value:  [[ 952.99708214]
+ [ 813.07975719]] Target:  [953, 813]
+
+Predicted value:  [[ 956.9940035 ]
+ [ 811.08201238]] Target:  [957, 811]
+
+Predicted value:  [[ 958.9969745 ]
+ [ 809.08220536]] Target:  [959, 809]
+
+Predicted value:  [[ 962.99378484]
+ [ 806.12256982]] Target:  [963, 806]
+
+Predicted value:  [[ 964.99686433]
+ [ 806.00343844]] Target:  [965, 806]
+iter 300, loss: 8.574991
+
+Predicted value:  [[ 967.99522729]
+ [ 804.08041024]] Target:  [968, 804]
+
+Predicted value:  [[ 969.99679259]
+ [ 802.08270185]] Target:  [970, 802]
+
+Predicted value:  [[ 973.99341297]
+ [ 800.08289687]] Target:  [974, 800]
+
+Predicted value:  [[ 975.99667695]
+ [ 797.12358828]] Target:  [976, 797]
+
+Predicted value:  [[ 979.99318082]
+ [ 797.00349835]] Target:  [980, 797]
+
+Predicted value:  [[ 981.99655997]
+ [ 795.08106529]] Target:  [982, 795]
+
+Predicted value:  [[ 985.9929435 ]
+ [ 793.08339373]] Target:  [986, 793]
+
+Predicted value:  [[ 987.99644039]
+ [ 790.12440986]] Target:  [988, 790]
+
+Predicted value:  [[ 991.99270099]
+ [ 790.00354712]] Target:  [992, 790]
+
+Predicted value:  [[ 993.99631818]
+ [ 788.0815947 ]] Target:  [994, 788]
+
+Predicted value:  [[ 995.99629679]
+ [ 786.08395312]] Target:  [996, 786]
+
+Predicted value:  [[ 999.99240307]
+ [ 784.08415191]] Target:  [1000, 784]
+
+Predicted value:  [[ 1001.99616804]
+ [  784.00241158]] Target:  [1002, 784]
+
+Predicted value:  [[ 1005.992149  ]
+ [  781.12307275]] Target:  [1006, 781]
+
+Predicted value:  [[ 1007.99604 ]
+ [  779.085693]] Target:  [1008, 779]
+
+Predicted value:  [[ 1009.99601799]
+ [  779.00246915]] Target:  [1010, 779]
+
+Predicted value:  [[ 1013.99183713]
+ [  777.08234098]] Target:  [1014, 777]
+
+Predicted value:  [[ 1015.99588281]
+ [  775.08477612]] Target:  [1016, 775]
+
+Predicted value:  [[ 1019.99157135]
+ [  775.00245092]] Target:  [1020, 775]
+
+Predicted value:  [[ 1021.99574885]
+ [  772.12404972]] Target:  [1022, 772]
+
+Predicted value:  [[ 1023.99572629]
+ [  770.08640325]] Target:  [1024, 770]
+
+Predicted value:  [[ 1027.99124533]
+ [  770.00251153]] Target:  [1028, 770]
+
+Predicted value:  [[ 1029.99558451]
+ [  768.08299382]] Target:  [1030, 768]
+
+Predicted value:  [[ 1033.99096769]
+ [  766.08546742]] Target:  [1034, 766]
+
+Predicted value:  [[ 1035.99544456]
+ [  766.00249262]] Target:  [1036, 766]
+
+Predicted value:  [[ 1037.9954215 ]
+ [  763.12502949]] Target:  [1038, 763]
+
+Predicted value:  [[ 1041.99062736]
+ [  761.087116  ]] Target:  [1042, 761]
+
+Predicted value:  [[ 1043.99527298]
+ [  761.00255443]] Target:  [1044, 761]
+
+Predicted value:  [[ 1047.99033773]
+ [  759.08364849]] Target:  [1048, 759]
+
+Predicted value:  [[ 1049.99512695]
+ [  756.12822275]] Target:  [1050, 756]
+
+Predicted value:  [[ 1051.99510348]
+ [  756.00378001]] Target:  [1052, 756]
+
+Predicted value:  [[ 1054.99256064]
+ [  754.0840897 ]] Target:  [1055, 754]
+
+Predicted value:  [[ 1056.9950038 ]
+ [  752.08659211]] Target:  [1057, 752]
+
+Predicted value:  [[ 1060.98978738]
+ [  752.00256119]] Target:  [1061, 752]
+
+Predicted value:  [[ 1062.99484945]
+ [  750.08430389]] Target:  [1063, 750]
+
+Predicted value:  [[ 1064.99482569]
+ [  747.12924648]] Target:  [1065, 747]
+
+Predicted value:  [[ 1068.98942027]
+ [  747.00384329]] Target:  [1069, 747]
+
+Predicted value:  [[ 1070.99466431]
+ [  745.0847482 ]] Target:  [1071, 745]
+
+Predicted value:  [[ 1074.98910822]
+ [  743.08728932]] Target:  [1075, 743]
+
+Predicted value:  [[ 1076.99450693]
+ [  743.0026042 ]] Target:  [1077, 743]
+
+Predicted value:  [[ 1078.99448291]
+ [  741.08496216]] Target:  [1079, 741]
+
+Predicted value:  [[ 1082.98872637]
+ [  738.13027337]] Target:  [1083, 738]
+
+Predicted value:  [[ 1084.99431432]
+ [  738.00390731]] Target:  [1085, 738]
+
+Predicted value:  [[ 1088.98840197]
+ [  736.08540853]] Target:  [1089, 736]
+
+Predicted value:  [[ 1090.99415068]
+ [  734.08798878]] Target:  [1091, 734]
+
+Predicted value:  [[ 1092.99412651]
+ [  734.00264771]] Target:  [1093, 734]
+
+Predicted value:  [[ 1096.98800525]
+ [  732.08562224]] Target:  [1097, 732]
+
+Predicted value:  [[ 1098.99395052]
+ [  729.13130337]] Target:  [1099, 729]
+
+Predicted value:  [[ 1102.9876684 ]
+ [  729.00397206]] Target:  [1103, 729]
+
+Predicted value:  [[ 1104.99378056]
+ [  727.08607067]] Target:  [1105, 727]
+
+Predicted value:  [[ 1108.98732588]
+ [  727.00260785]] Target:  [1109, 727]
+
+Predicted value:  [[ 1110.99360772]
+ [  727.00007902]] Target:  [1111, 727]
+
+Predicted value:  [[ 1114.98697764]
+ [  727.00000239]] Target:  [1115, 727]
+
+Predicted value:  [[ 1116.99343197]
+ [  725.08607259]] Target:  [1117, 725]
+
+Predicted value:  [[ 1120.98662368]
+ [  725.00261203]] Target:  [1121, 725]
+
+Predicted value:  [[ 1124.9863241 ]
+ [  725.00007927]] Target:  [1125, 725]
+
+Predicted value:  [[ 1126.99310814]
+ [  725.00000241]] Target:  [1127, 725]
+
+Predicted value:  [[ 1130.98597184]
+ [  722.12949618]] Target:  [1131, 722]
+
+Predicted value:  [[ 1132.99292423]
+ [  722.00394375]] Target:  [1133, 722]
+
+Predicted value:  [[ 1136.98560174]
+ [  722.00012011]] Target:  [1137, 722]
+
+Predicted value:  [[ 1138.99273736]
+ [  722.00000366]] Target:  [1139, 722]
+
+Predicted value:  [[ 1142.98522586]
+ [  720.08646991]] Target:  [1143, 720]
+
+Predicted value:  [[ 1145.9887678 ]
+ [  720.00263755]] Target:  [1146, 720]
+
+Predicted value:  [[ 1147.99246856]
+ [  720.00008045]] Target:  [1148, 720]
+
+Predicted value:  [[ 1151.98467034]
+ [  720.00000245]] Target:  [1152, 720]
+
+Predicted value:  [[ 1153.99226696]
+ [  718.08659223]] Target:  [1154, 718]
+
+Predicted value:  [[ 1157.98428019]
+ [  718.00264543]] Target:  [1158, 718]
+
+Predicted value:  [[ 1159.99206988]
+ [  718.00008082]] Target:  [1160, 718]
+
+Predicted value:  [[ 1163.98388421]
+ [  718.00000247]] Target:  [1164, 718]
+
+Predicted value:  [[ 1167.9835451 ]
+ [  716.08671463]] Target:  [1168, 716]
+
+Predicted value:  [[ 1169.99170743]
+ [  716.00265333]] Target:  [1170, 716]
+
+Predicted value:  [[ 1173.9831564 ]
+ [  716.00008119]] Target:  [1174, 716]
+
+Predicted value:  [[ 1175.99150202]
+ [  716.00000248]] Target:  [1176, 716]
+
+Predicted value:  [[ 1179.98274401]
+ [  713.13046004]] Target:  [1180, 713]
+
+Predicted value:  [[ 1181.99129358]
+ [  713.00400597]] Target:  [1182, 713]
+
+Predicted value:  [[ 1185.98232573]
+ [  713.00012301]] Target:  [1186, 713]
+
+Predicted value:  [[ 1189.98196489]
+ [  713.00000378]] Target:  [1190, 713]
+
+Predicted value:  [[ 1191.99091056]
+ [  711.08711287]] Target:  [1192, 711]
+
+Predicted value:  [[ 1195.98155763]
+ [  711.00267912]] Target:  [1196, 711]
+
+Predicted value:  [[ 1197.99069373]
+ [  711.0000824 ]] Target:  [1198, 711]
+
+Predicted value:  [[ 1201.98112282]
+ [  711.00000253]] Target:  [1202, 711]
+
+Predicted value:  [[ 1203.99047382]
+ [  709.08723546]] Target:  [1204, 709]
+
+Predicted value:  [[ 1207.9806821 ]
+ [  709.00268709]] Target:  [1208, 709]
+
+Predicted value:  [[ 1211.98029879]
+ [  709.00008277]] Target:  [1212, 709]
+
+Predicted value:  [[ 1213.99007006]
+ [  709.00000255]] Target:  [1214, 709]
+
+Predicted value:  [[ 1217.97987345]
+ [  707.08735815]] Target:  [1218, 707]
+
+Predicted value:  [[ 1219.98984171]
+ [  707.00269507]] Target:  [1220, 707]
+
+Predicted value:  [[ 1223.97941612]
+ [  707.00008315]] Target:  [1224, 707]
+
+Predicted value:  [[ 1227.97901575]
+ [  707.00000257]] Target:  [1228, 707]
+
+Predicted value:  [[ 1229.98942256]
+ [  707.00000008]] Target:  [1230, 707]
+
+Predicted value:  [[ 1232.98404193]
+ [  707.        ]] Target:  [1233, 707]
+
+Predicted value:  [[ 1234.98928467]
+ [  707.        ]] Target:  [1235, 707]
+
+Predicted value:  [[ 1238.97826993]
+ [  707.        ]] Target:  [1239, 707]
+
+Predicted value:  [[ 1240.98902992]
+ [  707.        ]] Target:  [1241, 707]
+
+Predicted value:  [[ 1244.97779201]
+ [  707.        ]] Target:  [1245, 707]
+
+Predicted value:  [[ 1246.9887879]
+ [  707.       ]] Target:  [1247, 707]
+
+Predicted value:  [[ 1250.97730818]
+ [  707.        ]] Target:  [1251, 707]
+
+Predicted value:  [[ 1254.97687977]
+ [  707.        ]] Target:  [1255, 707]
+
+Predicted value:  [[ 1256.98834413]
+ [  707.        ]] Target:  [1257, 707]
+
+Predicted value:  [[ 1260.97642171]
+ [  707.        ]] Target:  [1261, 707]
+iter 400, loss: 3.652477
+[[1186, 713], [1190, 713], [1192, 711], [1196, 711], [1198, 711], [1202, 711], [1204, 709], [1208, 709], [1212, 709], [1214, 709], [1218, 707], [1220, 707], [1224, 707], [1228, 707], [1230, 707], [1233, 707], [1235, 707], [1239, 707], [1241, 707], [1245, 707], [1247, 707], [1251, 707], [1255, 707], [1257, 707], [1261, 707]]
+ ***  TESTING *** 
+
+Predicted value:  [[ 1260.98667253]
+ [  707.        ]] Target:  [1263, 707]
+
+Predicted value:  [[ 1261.86161494]
+ [  707.        ]] Target:  [1267, 707]
+
+Predicted value:  [[ 1264.0289258]
+ [  707.       ]] Target:  [1269, 707]
+
+Predicted value:  [[ 1266.17827035]
+ [  707.        ]] Target:  [1273, 707]
+
+Predicted value:  [[ 1268.33463995]
+ [  707.        ]] Target:  [1277, 707]
+
+Predicted value:  [[ 1270.48556943]
+ [  707.        ]] Target:  [1279, 707]
+
+Predicted value:  [[ 1272.63109975]
+ [  707.        ]] Target:  [1283, 707]
+
+Predicted value:  [[ 1274.77127138]
+ [  707.        ]] Target:  [1285, 707]
+
+Predicted value:  [[ 1276.90612426]
+ [  707.        ]] Target:  [1289, 707]
+
+Predicted value:  [[ 1279.03569786]
+ [  707.        ]] Target:  [1291, 707]
+
+Predicted value:  [[ 1281.16003113]
+ [  707.        ]] Target:  [1295, 707]
+
+Predicted value:  [[ 1283.27916259]
+ [  707.        ]] Target:  [1299, 707]
+
+Predicted value:  [[ 1285.39313026]
+ [  707.        ]] Target:  [1301, 707]
+
+Predicted value:  [[ 1287.5019717]
+ [  707.       ]] Target:  [1305, 707]
+
+Predicted value:  [[ 1289.60572403]
+ [  707.        ]] Target:  [1307, 707]
+
+Predicted value:  [[ 1291.7044239]
+ [  707.       ]] Target:  [1311, 707]
+
+Predicted value:  [[ 1293.79810756]
+ [  707.        ]] Target:  [1313, 707]
+
+Predicted value:  [[ 1295.8868108]
+ [  707.       ]] Target:  [1317, 707]
+
+Predicted value:  [[ 1297.97056899]
+ [  707.        ]] Target:  [1321, 709]
+
+Predicted value:  [[ 1300.04941708]
+ [  707.58749282]] Target:  [1322, 709]
+
+Predicted value:  [[ 1302.12338964]
+ [  708.00237284]] Target:  [1326, 709]
+
+Predicted value:  [[ 1304.19252079]
+ [  708.29538106]] Target:  [1330, 709]
+
+Predicted value:  [[ 1306.25684429]
+ [  708.50232644]] Target:  [1334, 709]
+
+Predicted value:  [[ 1308.31639349]
+ [  708.64849061]] Target:  [1336, 709]
+
+Predicted value:  [[ 1310.37120137]
+ [  708.75172652]] Target:  [1340, 709]
+
+Predicted value:  [[ 1312.42130052]
+ [  708.82464253]] Target:  [1344, 709]
+
+Predicted value:  [[ 1314.46672317]
+ [  708.8761436 ]] Target:  [1348, 709]
+
+Predicted value:  [[ 1316.50750117]
+ [  708.91251919]] Target:  [1350, 709]
+
+Predicted value:  [[ 1318.54366602]
+ [  708.93821157]] Target:  [1354, 709]
+
+Predicted value:  [[ 1320.57524887]
+ [  708.95635831]] Target:  [1358, 709]
+
+Predicted value:  [[ 1322.6022805]
+ [  708.9691755]] Target:  [1362, 709]
+
+Predicted value:  [[ 1324.62479137]
+ [  708.97822839]] Target:  [1364, 709]
+
+Predicted value:  [[ 1326.6428116 ]
+ [  708.98462253]] Target:  [1368, 709]
+
+Predicted value:  [[ 1328.65637095]
+ [  708.98913876]] Target:  [1372, 709]
+
+Predicted value:  [[ 1330.66549889]
+ [  708.99232861]] Target:  [1376, 709]
+
+Predicted value:  [[ 1332.67022454]
+ [  708.99458163]] Target:  [1378, 707]
+
+Predicted value:  [[ 1334.67057672]
+ [  708.40889947]] Target:  [1380, 707]
+
+Predicted value:  [[ 1336.66658392]
+ [  707.99523357]] Target:  [1382, 704]
+
+Predicted value:  [[ 1338.65827434]
+ [  706.82307418]] Target:  [1384, 704]
+
+Predicted value:  [[ 1340.64567586]
+ [  705.99512327]] Target:  [1386, 703]
+
+Predicted value:  [[ 1342.62881607]
+ [  705.11708271]] Target:  [1390, 703]
+
+Predicted value:  [[ 1344.60772227]
+ [  704.49657581]] Target:  [1394, 703]
+
+Predicted value:  [[ 1346.58242145]
+ [  704.05798249]] Target:  [1397, 703]
+
+Predicted value:  [[ 1348.55294034]
+ [  703.74794156]] Target:  [1401, 703]
+
+Predicted value:  [[ 1350.51930537]
+ [  703.52876361]] Target:  [1405, 703]
+
+Predicted value:  [[ 1352.48154271]
+ [  703.37381594]] Target:  [1405, 703]
+
+Predicted value:  [[ 1354.43967823]
+ [  703.26427449]] Target:  [1405, 703]
+
+Predicted value:  [[ 1356.39373755]
+ [  703.18683286]] Target:  [1405, 703]
+
+Predicted value:  [[ 1358.34374602]
+ [  703.13208441]] Target:  [1405, 703]
+
+Predicted value:  [[ 1360.28972874]
+ [  703.09337917]] Target:  [1405, 703]
+
+Predicted value:  [[ 1362.23171052]
+ [  703.0660159 ]] Target:  [1405, 703]
+
+Predicted value:  [[ 1364.16971596]
+ [  703.046671  ]] Target:  [1405, 703]
+
+Predicted value:  [[ 1366.10376937]
+ [  703.03299481]] Target:  [1405, 703]
+
+Predicted value:  [[ 1368.03389484]
+ [  703.02332622]] Target:  [1405, 703]
+
+Predicted value:  [[ 1369.96011619]
+ [  703.01649084]] Target:  [1405, 703]
+
+Predicted value:  [[ 1371.88245703]
+ [  703.01165847]] Target:  [1405, 703]
+
+Predicted value:  [[ 1373.80094071]
+ [  703.00824214]] Target:  [1405, 703]
+
+Predicted value:  [[ 1375.71559036]
+ [  703.00582691]] Target:  [1405, 703]
+
+Predicted value:  [[ 1377.62642888]
+ [  703.00411943]] Target:  [1405, 703]
+
+Predicted value:  [[ 1379.53347892]
+ [  703.0029123 ]] Target:  [1405, 703]
+
+Predicted value:  [[ 1381.43676295]
+ [  703.0020589 ]] Target:  [1405, 703]
+
+Predicted value:  [[ 1383.33630317]
+ [  703.00145557]] Target:  [1405, 703]
+
+Predicted value:  [[ 1385.2321216 ]
+ [  703.00102904]] Target:  [1405, 703]
+
+Predicted value:  [[ 1387.12424002]
+ [  703.0007275 ]] Target:  [1405, 703]
+
+Predicted value:  [[ 1389.01268002]
+ [  703.00051431]] Target:  [1405, 703]
+
+Predicted value:  [[ 1390.89746297]
+ [  703.0003636 ]] Target:  [1405, 703]
+
+Predicted value:  [[ 1392.77861002]
+ [  703.00025706]] Target:  [1405, 703]
+
+Predicted value:  [[ 1394.65614215]
+ [  703.00018173]] Target:  [1405, 703]
+
+Predicted value:  [[ 1396.53008011]
+ [  703.00012848]] Target:  [1405, 703]
+
+Predicted value:  [[ 1398.40044446]
+ [  703.00009083]] Target:  [1405, 703]
+
+Predicted value:  [[ 1400.26725558]
+ [  703.00006421]] Target:  [1405, 703]
+
+Predicted value:  [[ 1402.0312864]
+ [  703.0000454]] Target:  [1405, 703]
+
+Predicted value:  [[ 1403.13707477]
+ [  703.00003209]] Target:  [1405, 703]
+
+Predicted value:  [[ 1403.83079648]
+ [  703.00002269]] Target:  [1405, 703]
+
+Predicted value:  [[ 1404.26614306]
+ [  703.00001604]] Target:  [1405, 703]
+
+Predicted value:  [[ 1404.5393796 ]
+ [  703.00001134]] Target:  [1405, 703]
+
+Predicted value:  [[ 1404.71087938]
+ [  703.00000802]] Target:  [1405, 703]
+
+Predicted value:  [[ 1404.8185251 ]
+ [  703.00000567]] Target:  [1405, 703]
+
+Predicted value:  [[ 1404.88609187]
+ [  703.00000401]] Target:  [1405, 703]
+
+Predicted value:  [[ 1404.92850212]
+ [  703.00000283]] Target:  [1405, 703]
+
+Predicted value:  [[ 1404.95512219]
+ [  703.000002  ]] Target:  [1405, 703]
+
+Predicted value:  [[ 1404.97183108]
+ [  703.00000142]] Target:  [1405, 703]
+
+Predicted value:  [[ 1404.98231892]
+ [  703.000001  ]] Target:  [1405, 703]
+
+Predicted value:  [[ 1404.98890193]
+ [  703.00000071]] Target:  [1405, 703]
+
+Predicted value:  [[ 1404.99303396]
+ [  703.0000005 ]] Target:  [1405, 703]
+
+Predicted value:  [[ 1404.99562755]
+ [  703.00000035]] Target:  [1405, 703]
+
+Predicted value:  [[ 1404.9972555 ]
+ [  703.00000025]] Target:  [1405, 703]
+
+Predicted value:  [[ 1404.99827733]
+ [  703.00000018]] Target:  [1405, 703]
+
+Predicted value:  [[ 1404.99891871]
+ [  703.00000012]] Target:  [1405, 703]
+
+Predicted value:  [[ 1404.9993213 ]
+ [  703.00000009]] Target:  [1405, 703]
+
+Predicted value:  [[ 1404.99957399]
+ [  703.00000006]] Target:  [1405, 703]
+
+Predicted value:  [[ 1404.9997326 ]
+ [  703.00000004]] Target:  [1405, 703]
+
+Predicted value:  [[ 1404.99983216]
+ [  703.00000003]] Target:  [1405, 703]
+
+Predicted value:  [[ 1404.99989465]
+ [  703.00000002]] Target:  [1405, 703]
+
+Predicted value:  [[ 1404.99993387]
+ [  703.00000002]] Target:  [1405, 703]
+
+Predicted value:  [[ 1404.99995849]
+ [  703.00000001]] Target:  [1405, 703]
+
+Predicted value:  [[ 1404.99997395]
+ [  703.00000001]] Target:  [1405, 703]
+
+Predicted value:  [[ 1404.99998365]
+ [  703.00000001]] Target:  [1405, 703]
+
+Predicted value:  [[ 1404.99998974]
+ [  703.        ]] Target:  [1405, 703]
+
+Predicted value:  [[ 1404.99999356]
+ [  703.        ]] Target:  [1405, 703]
