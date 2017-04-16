@@ -157,13 +157,17 @@ for f in xrange(N):
     # Find neighbours N for all enities
     tempEN = tempE.values()
     #print tempEN
+    for e in tempE:
+        entities[e].Neighbours = [] # make it empty for every frame
     for e in xrange(len(tempEN) - 1):
         for n in xrange(e + 1, len(tempEN)):
             # If inside 200x200 box
-            if (int(tempEN[e][5]) + 100 >= int(tempEN[n][5])) or (int(tempEN[e][5]) - 100 <= int(tempEN[n][5])) or (
-                            int(tempEN[e][6]) + 100 >= int(tempEN[n][6])) or (int(tempEN[e][6]) - 100 <= int(tempEN[n][6])):
+            if (int(tempEN[e][5]) + 100 >= int(tempEN[n][5])) and (int(tempEN[e][5]) - 100 <= int(tempEN[n][5])) and (
+                            int(tempEN[e][6]) + 100 >= int(tempEN[n][6])) and (int(tempEN[e][6]) - 100 <= int(tempEN[n][6])):
                 entities[tempEN[e][0]].Neighbours.append(tempEN[n][0])
                 entities[tempEN[n][0]].Neighbours.append(tempEN[e][0])
+                entities[tempEN[e][0]].Neighbours = list(set(entities[tempEN[e][0]].Neighbours))
+                entities[tempEN[n][0]].Neighbours = list(set(entities[tempEN[n][0]].Neighbours))
 
     # Calculate Ht - do pooling of 200x200 into 10x10
     for e in xrange(len(tempEN)):
