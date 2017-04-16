@@ -3,7 +3,7 @@ import csv
 from scipy.spatial import distance
 
 # hyperparameters
-hidden_size = 64  # size of hidden layer of neurons
+hidden_size = 30  # size of hidden layer of neurons
 seq_length = 25  # number of steps to unroll the RNN for
 learning_rate = 0.6
 vocab_size = 2
@@ -132,7 +132,7 @@ entities = dict()
 
 inputpath = 'bookstore0entities/bookstore0train'
 # opening framewise files
-N = 5
+N = 100
 output = None
 done = False
 hprev = np.zeros((hidden_size,1))
@@ -192,9 +192,10 @@ for f in xrange(N):
             i = 0
             j = 0
             for x in xrange(ex - 50, ex + 50, 5):
+                i = 0
                 for y in xrange(ey - 50, ey + 50, 5):
                     #print i,j,x,y
-                    if tempE[n][5]>=x and tempE[n][5]<=x+5 and tempE[n][6]>=y and tempE[n][6]<=y+5 :
+                    if int(tempE[n][5])>=x and int(tempE[n][5])<=x+5 and int(tempE[n][6])>=y and int(tempE[n][6])<=y+5 :
                         Ht[i][j] += reduce(lambda x, y: x + y, entities[n].hs.tolist())             # Hierarchical weight induction !!!
                     i += 1
                 j += 1
