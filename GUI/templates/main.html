@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+
+
+        .center-align {
+            margin: auto;
+            display: block;
+            text-align: center;
+        }
+
+        body {
+            background-image: url("/static/background.png");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            background-size: contain;
+        }
+
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 1; /* Sit on top */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgb(0, 0, 0); /* Fallback color */
+            background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+        }
+
+        /* Modal Content/Box */
+        .modal-content {
+            background-color: #fefefe;
+            margin: 15% auto; /* 15% from the top and centered */
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%; /* Could be more or less, depending on screen size */
+        }
+
+        .modal-body {
+            position: relative;
+            height: 500px;
+            padding: 15px;
+            vertical-align:middle;
+        }
+
+
+        /* The Close Button */
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .concentric-circles {
+            width: 25px;
+            height: 25px;
+            display: block;
+            position: absolute;
+            border-radius: 50%;
+            transform: translateX(-50%);
+            transition: all 0.2s ease-in-out;
+            animation: ripple 2.0s 0.2s infinite;
+            -webkit-animation: ripple 2.0s 0.2s infinite;
+        }
+
+        .concentric-circles:hover {
+            transform: translateX(-50%) scale(1.2);
+        }
+
+        @-webkit-keyframes ripple {
+            20% {
+                box-shadow: 0px 0px 0px 6px #fff,
+                0px 0px 0px 8px #222;
+            }
+
+            50% {
+                box-shadow: 0px 0px 0px 6px #fff,
+                0px 0px 0px 8px #222,
+                0px 0px 0px 14px #fff,
+                0px 0px 2px 16px #888;
+            }
+
+            100% {
+                box-shadow: 0px 0px 0px 6px #fff,
+                0px 0px 0px 8px #222,
+                0px 0px 0px 14px #fff,
+                0px 0px 2px 16px #888,
+                0px 0px 0px 22px #fff,
+                0px 0px 5px 24px #ddd;
+            }
+        }
+
+        #frame, video {
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+
+        div.transbox {
+            display: none;
+            position: absolute;
+            margin: 20px;
+            height: 40px;
+            width: 75px;
+            background-color: #ffffff;
+            border: 2px solid black;
+            opacity: 0.6;
+            filter: alpha(opacity=60); /* For IE8 and earlier */
+        }
+
+        div.transbox p {
+            margin: 5%;
+            font-weight: bold;
+            color: #000000;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+
+    </style>
+</head>
+
+<script>
+
+    $('#myModal').on('show.bs.modal', function () {
+        $(this).find('.modal-body').css({
+            width: 'auto', //probably not needed
+            height: 'auto', //probably not needed
+            'max-height': '100%'
+        });
+    });
+
+    function init() {
+        marginTopValues = ["40px", "260px", "130px", "280px", "80px"];
+        marginLeftValues = ["20", "10", "40", "85", "80"];
+        backgroundColors = ["red", "blue", "green", "yellow", "purple"];
+        entities = document.getElementsByClassName("concentric-circles");
+        espan = document.getElementsByClassName("close")[0];
+        mymodal = document.getElementById('myModal');
+        methodmodal = document.getElementById('methodModal');
+        videomodal = document.getElementById('videoModal');
+        e1span = document.getElementsByClassName("close")[1];
+        e2span = document.getElementsByClassName("close")[2];
+
+        // When the user clicks on <span> (x), close the modal
+        espan.onclick = function () {
+            mymodal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == mymodal) {
+                mymodal.style.display = "none";
+            }
+            if (event.target == methodmodal) {
+                methodmodal.style.display = "none";
+            }
+            if (event.target == methodmodal) {
+                videomodal.style.display = "none";
+            }
+        }
+        e1span.onclick = function () {
+            methodmodal.style.display = "none";
+        }
+        e2span.onclick = function () {
+            videomodal.style.display = "none";
+        }
+    }
+    function drawAnimation() {
+
+        for (var i = 0; i < entities.length; i++) {
+            entities[i].style.top = marginTopValues[i];
+            entities[i].style.left = marginLeftValues[i] + "%";
+            entities[i].style.backgroundColor = backgroundColors[i];
+
+        }
+        mymodal.style.display = "block";
+
+
+        move1();
+
+    }
+
+    function move1() {
+
+        var poolBox1 = document.getElementById("poolBox1");
+        var poolBox2 = document.getElementById("poolBox2");
+        poolBox1.style.display = "none";
+        poolBox2.style.display = "none";
+        if (entities[3].offsetTop >= 215) {
+            entities[3].style.top = entities[3].offsetTop - 8 + "px";
+            entities[3].style.left = entities[3].offsetLeft - 4 + "px";
+            entities[4].style.top = entities[4].offsetTop + 13 + "px";
+            entities[0].style.top = entities[0].offsetTop + 12 + "px";
+            entities[1].style.top = entities[1].offsetTop - 10 + "px";
+            setTimeout(move1, 0.0000000000001);
+        }
+        else {
+
+
+            poolBox1.style.left = entities[3].offsetLeft - 35 + "px";
+            poolBox1.style.top = entities[3].offsetTop - 30 + "px";
+            poolBox1.style.display = "block";
+
+            poolBox2.style.left = entities[0].offsetLeft - 35 + "px";
+            poolBox2.style.top = entities[0].offsetTop - 30 + "px";
+            poolBox2.style.display = "block";
+            setTimeout(move2, 2000);
+        }
+
+        i = 0;
+
+    }
+
+
+    function move2() {
+        var poolBox1 = document.getElementById("poolBox1");
+        var poolBox2 = document.getElementById("poolBox2");
+        poolBox1.style.display = "none";
+        poolBox2.style.display = "none";
+        i += 1;
+        if (entities[3].offsetTop >= 70) {
+            console.log(i);
+            if (i <= 400) {
+                entities[3].style.left = entities[3].offsetLeft - 3 + "px";
+            }
+            else {
+                entities[3].style.left = entities[3].offsetLeft + 7 + "px";
+                entities[2].style.left = entities[2].offsetLeft + 12 + "px";
+                entities[4].style.left = entities[4].offsetLeft - 2 + "px";
+            }
+            entities[3].style.top = entities[3].offsetTop - 6 + "px";
+
+            entities[4].style.top = entities[4].offsetTop + 10 + "px";
+
+            entities[0].style.top = entities[0].offsetTop + 10 + "px";
+            entities[0].style.left = entities[0].offsetLeft + 1 + "px";
+            entities[1].style.top = entities[1].offsetTop - 6 + "px";
+            entities[2].style.top = entities[2].offsetTop - 2 + "px";
+
+            setTimeout(move2, 0.0000000000001);
+        }
+        else {
+
+
+            poolBox1.style.left = entities[2].offsetLeft - 35 + "px";
+            poolBox1.style.top = entities[2].offsetTop - 30 + "px";
+            poolBox1.style.display = "block";
+
+        }
+
+
+    }
+
+    function choose() {
+        methodmodal.style.display = "block";
+    }
+
+    function changeImage(event) {
+        var im = $('#scene').find(":selected").text();
+        $("#sceneImg").attr("src", "static/scene_references/" + im + "Reference.jpg")
+    }
+    function findOutput() {
+        //displayVideo
+        methodmodal.style.display="none";
+        var method = $('#method').find(":selected").text();
+        var scene = $('#scene').find(":selected").text();
+        console.log(method,scene);
+        if (method === "RNN" && scene === "Coupa") {
+            console.log(method,scene);
+            //play video
+            document.getElementById("videoModal").style.display="block";
+            // $('#vidSrc').attr("src","static/coupaRNN.mp4");
+        }
+
+    }
+
+
+</script>
+<body onload="init()">
+<div class="container-fluid">
+    <br/>
+    <div>
+        <h1 class="center-align">TRAJECTORY PREDICTION OF ENTITIES IN CROWDED SCENES</h1>
+    </div>
+
+
+    <div>
+        <br>
+        <div class="row">
+            <div class="col-md-12 col-lg-12 col-sm-12">
+
+                <br/>
+                <br/>
+                <br/>
+                <div class="row">
+                    <button type="button" id="animate" class="btn btn-primary btn-lg center-align"
+                            onclick="drawAnimation()">ENTITY ANIMATION
+                    </button>
+                </div>
+                <br/>
+                <div class="row">
+                    <button type="button" class="btn btn-primary btn-lg center-align" onclick="choose()">OPTIONS
+                    </button>
+                </div>
+            </div>
+
+        </div>
+        <div class="row">
+
+        </div>
+    </div>
+</div>
+
+<div id="myModal" class="modal">
+    <div class="modal-dialog">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">GENERAL TECHNIQUE</h4>
+
+            </div>
+            <div class="modal-body">
+                <div id="frame">
+                    <div id="1" class="concentric-circles">
+                    </div>
+                    <div id="2" class="concentric-circles">
+                    </div>
+                    <div id="3" class="concentric-circles">
+                    </div>
+                    <div id="4" class="concentric-circles">
+                    </div>
+                    <div id="5" class="concentric-circles">
+                    </div>
+                    <div class="transbox" id="poolBox1">
+                        <p>POOLED!</p>
+                    </div>
+                    <div class="transbox" id="poolBox2">
+                        <p>POOLED!</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+<div id="methodModal" class="modal">
+    <div class="modal-dialog">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">OPTIONS</h4>
+
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-5">
+                        <label>METHOD:</label>
+                    </div>
+                    <div class="col-md-7">
+                        <select id="method">
+                            <option value="1">RNN</option>
+                            <option value="2">GRU</option>
+                            <option value="3">Hierarchical-RNN</option>
+                            <option value="4">Attention Memory Networks</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="col-md-5">
+                            <label>SCENE:</label>
+                        </div>
+                        <div class="col-md-7">
+                            <select id="scene" onchange="changeImage(event)">
+                                <option value="bookstore">BookStore</option>
+                                <option value="hyang">Hyang</option>
+                                <option value="nexus">Nexus</option>
+                                <option value="coupa">Coupa</option>
+                                <option value="gates">Gates</option>
+                                <option value="little">Little</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div>
+                            <img id="sceneImg" src="static/scene_references/bookstoreReference.jpg" alt="BookStore">
+                        </div>
+
+                    </div>
+                </div>
+                <div class="row">
+
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary btn-lg center-align" id="output" onclick="findOutput()">OUTPUT
+                        VIDEO
+                    </button>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+<div id="videoModal" class="modal">
+    <div class="modal-dialog">
+        <!-- Modal content -->
+        <div class="modal-content" id="videoContent">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">OUTPUT</h4>
+
+            </div>
+            <div class="modal-body">
+                <video controls>
+                    <source id="vidSrc" src="static/coupaRNN.mp4">
+                </video>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+</body>
+</html>
