@@ -1,0 +1,56 @@
+<html>
+<head>
+<style>
+    .concentric-circles {
+  width: 80px;
+  height: 80px;
+  margin-top: 50px;
+  margin-left: 50%;
+  background-color: red;
+  border-radius: 50%;
+  transform: translateX(-50%);
+  transition: all 0.2s ease-in-out;
+  animation: ripple 2.0s 0.2s infinite;
+  -webkit-animation: ripple 2.0s 0.2s  infinite;
+}
+
+.concentric-circles:hover {
+  transform: translateX(-50%) scale(1.2);
+}
+
+@-webkit-keyframes ripple {
+  20% {
+    box-shadow: 0px 0px 0px 6px #fff,
+                0px 0px 0px 8px #222;
+  }
+
+  50% {
+    box-shadow: 0px 0px 0px 6px #fff,
+                0px 0px 0px 8px #222,
+                0px 0px 0px 14px #fff,
+                0px 0px 2px 16px #888;
+  }
+
+  100% {
+    box-shadow: 0px 0px 0px 6px #fff,
+                0px 0px 0px 8px #222,
+                0px 0px 0px 14px #fff,
+                0px 0px 2px 16px #888,
+                0px 0px 0px 22px #fff,
+                0px 0px 5px 24px #ddd;
+  }
+}
+
+</style>
+</head>
+<body>
+
+
+</body>
+
+<div class="concentric-circles">
+</div>
+
+
+
+</html>
