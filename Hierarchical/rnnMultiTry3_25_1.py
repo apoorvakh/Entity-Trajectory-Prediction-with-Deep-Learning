@@ -84,17 +84,20 @@ class RNN():
         # print ps, targets
         # print type(ps), ps
         # print type(ps)
+        loss = distance.euclidean(ps, targets)
+        #print "loss",loss
         #print "\nPredicted value: ", [ps[0][0], ps[1][0]], "    Target: ", targets
-        with open(outpath+'//frame//'+str(frameNo)+'.csv', 'a') as outfile:
-            outfile.write(  str(entityNo) + ", " + str(ps[0][0]) + ", " + str(ps[1][0]) + ", " + str(targets[0]) + ", " + str(targets[1]) +"\n" )
-        with open(outpath+'//entity//'+str(entityNo)+'.csv', 'a') as outfile:
-            outfile.write(  str(frameNo) + ", " + str(ps[0][0]) + ", " + str(ps[1][0]) + ", " + str(targets[0]) + ", " + str(targets[1]) +"\n" )
+        if epochTrace == 9 :
+            with open(outpath+'//frame//'+str(frameNo)+'.csv', 'a') as outfile:
+                outfile.write(  str(entityNo) + ", " + str(ps[0][0]) + ", " + str(ps[1][0]) + ", " + str(targets[0]) + ", " + str(targets[1]) +"\n" )
+            with open(outpath+'//entity//'+str(entityNo)+'.csv', 'a') as outfile:
+                outfile.write(  str(frameNo) + ", " + str(ps[0][0]) + ", " + str(ps[1][0]) + ", " + str(targets[0]) + ", " + str(targets[1]) + ", " + str(loss) + "\n" )
 
         # loss is the euclidian distance
         # loss += -np.log(ps) # softmax (cross-entropy loss)
         #loss = distance.euclidean(ps, targets)
-        # print "loss",loss
-        # exit()
+        #print "loss",loss
+        #exit()
         # backward pass: compute gradients going backwards
         # print xs[t],xs[t].shape
         dWxh, dWhh, dWhy, dWd = np.zeros_like(wtMatrices[eClass]['Wxh']), np.zeros_like(wtMatrices[eClass]['Whh']), np.zeros_like(wtMatrices[eClass]['Why']), np.zeros_like(self.Wd)
@@ -127,136 +130,142 @@ class RNN():
         return loss, dWxh, dWhh, dWhy, dWd, dbh, dby, hs[len(inputs)-1], ps
 
 
+epochTrace = 0
+EPOCHS = 1
 # Entity Dict - { 'entity' : RNN() }
 entities = dict()
-
-inputpath = 'bookstore0entities/bookstore0train'
-# opening framewise files
-N = 47
-output = None
-done = False
-hprev = np.zeros((hidden_size,1))
-# frame-wise
-for f in xrange(N):
-    print "Frame : ", f
-    # Make sure every new entity has an RNN instance
-    tempE = dict()
-    with open(path + str(f) + '.csv', 'r') as csvfile:
-        data = csv.reader(csvfile)
-        for i in data:
-            #print i[0]
-            entities[i[0]]=entities.get(i[0], RNN())
-            tempE[i[0]] = i
-            # Print frame no. for an entity
-            #with open(outpath+str(f+1)+'.txt','a') as outfile:
-                #outfile.write( str(f) )
-            # inputlist.append([int(i[5]), int(i[6])])
-    #print tempE
-    #print entities
-    # For this frame(time t) - call lossFunc of RNN for ALL entities in frame t
-    # Find neighbours N for all enities
-    tempEN = tempE.values()
-    #print tempEN
-    for e in tempE:
-        entities[e].Neighbours = [] # make it empty for every frame
-    for e in xrange(len(tempEN) - 1):
-        for n in xrange(e + 1, len(tempEN)):
-            # If inside 200x200 box
-            if (int(tempEN[e][5]) + 100 >= int(tempEN[n][5])) and (int(tempEN[e][5]) - 100 <= int(tempEN[n][5])) and (
-                            int(tempEN[e][6]) + 100 >= int(tempEN[n][6])) and (int(tempEN[e][6]) - 100 <= int(tempEN[n][6])):
-                entities[tempEN[e][0]].Neighbours.append(tempEN[n][0])
-                entities[tempEN[n][0]].Neighbours.append(tempEN[e][0])
-                entities[tempEN[e][0]].Neighbours = list(set(entities[tempEN[e][0]].Neighbours))
-                entities[tempEN[n][0]].Neighbours = list(set(entities[tempEN[n][0]].Neighbours))
-
-    # Calculate Ht - do pooling of 200x200 into 10x10
-    for e in xrange(len(tempEN)):
-        Ht = np.zeros((20, 20, hidden_size))
-        # Do calculation here!!!
-        ex = int(tempEN[e][5])
-        ey = int(tempEN[e][6])
-        # pool to 10x10
-        y = ey - 100
-        # filling Ht with neighbours hs
-        for n in entities[tempEN[e][0]].Neighbours:
-            i = 0
-            j = 0
-            for x in xrange(ex - 100, ex + 100, 10):
-                for y in xrange(ey - 100, ey + 100, 10):
-                    #print i,j,x,y
-                    if tempE[n][5]>=x and tempE[n][5]<=x+10 and tempE[n][6]>=y and tempE[n][6]<=y+10 :
-                        Ht[i][j] += reduce(lambda x, y: x + y, entities[n].hs.tolist())             # Hierarchical weight induction !!!
-                    i += 1
-                j += 1
-
-        # Apply Hierarchy on the pooled-matrix
-        #print Ht
-        for c in xrange( 10 ):
-            m = float( c+1 )/ 10
-            for x in xrange( c, 20-c):
-                Ht[c][x] *= m   # top-left-to-right
-                Ht[19-c][x] *= m    # bottom-left-to-right
-            for y in xrange( c+1, 19-c ):
-                Ht[y][c] *= m   #left-top-to-bottom
-                Ht[y][19-c] *= m    #right-top-to-bottom
-        #print Ht
-        #exit(0)
-
-        #  open next frame to get target and call loss function
-        #print "Entity : ", tempEN[e][0]
-        with open(path + str(f+1) + '.csv', 'r') as csvfile:
+for E in xrange(EPOCHS):
+    inputpath = 'bookstore0entities/bookstore0train'
+    # opening framewise files
+    N = 1000
+    output = None
+    done = False
+    hprev = np.zeros((hidden_size,1))
+    # frame-wise
+    for f in xrange(N):
+        if f==99 or f==999:
+            print "Frame : ", f
+        # Make sure every new entity has an RNN instance
+        tempE = dict()
+        with open(path + str(f) + '.csv', 'r') as csvfile:
             data = csv.reader(csvfile)
             for i in data:
-                # print i[0]=
-                train = True
-                if f > N :#*3/4:
-                    train = False
-                    #print "###################TESTING : #####################"
-                epochs = 1
-                for epoch in xrange(epochs):
-                    global output
-                    if i[0]==tempEN[e][0]:
-                        target = [ int(i[5]), int(i[6])]
+                #print i[0]
+                entities[i[0]]=entities.get(i[0], RNN())
+                tempE[i[0]] = i
+                # Print frame no. for an entity
+                #with open(outpath+str(f+1)+'.txt','a') as outfile:
+                    #outfile.write( str(f) )
+                # inputlist.append([int(i[5]), int(i[6])])
+        #print tempE
+        #print entities
+        # For this frame(time t) - call lossFunc of RNN for ALL entities in frame t
+        # Find neighbours N for all enities
+        tempEN = tempE.values()
+        #print tempEN
+        for e in tempE:
+            entities[e].Neighbours = [] # make it empty for every frame
+        for e in xrange(len(tempEN) - 1):
+            for n in xrange(e + 1, len(tempEN)):
+                # If inside 200x200 box
+                if (int(tempEN[e][5]) + 100 >= int(tempEN[n][5])) and (int(tempEN[e][5]) - 100 <= int(tempEN[n][5])) and (
+                                int(tempEN[e][6]) + 100 >= int(tempEN[n][6])) and (int(tempEN[e][6]) - 100 <= int(tempEN[n][6])):
+                    entities[tempEN[e][0]].Neighbours.append(tempEN[n][0])
+                    entities[tempEN[n][0]].Neighbours.append(tempEN[e][0])
+                    entities[tempEN[e][0]].Neighbours = list(set(entities[tempEN[e][0]].Neighbours))
+                    entities[tempEN[n][0]].Neighbours = list(set(entities[tempEN[n][0]].Neighbours))
 
-                        inputlist = []
-                        # open previous 25 frames of the entity to send as input
-                        alllist = []
-                        with open(inputpath + str(tempEN[e][-1]) + tempEN[e][0] + '.csv','r') as infile:
-                            data = csv.reader(csvfile)
-                            for r in data:
-                                alllist.append( [ int(r[7]), int(r[5]), int(r[6]) ] )
-                                # now get 25 previous frame data
-                                if alllist[-1][0]==f :
-                                    l = len(alllist)
-                                    minf = 24 if l-24>0 else l
-                                    #for frameno in reversed( xrange( f-minf, f ) ):
-                                    for j in reversed(xrange(minf)):
-                                        inputlist.append([alllist[l-j][1], alllist[l-j][2]])
-                        #append current frame too
-                        inputlist.append([int(tempEN[e][5]), int(tempEN[e][6])])
-                        if train == True: # Training
-                            loss, dWxh, dWhh, dWhy, dWd, dbh, dby, hprev, output =  entities[tempEN[e][0]].lossFunc(inputlist, tempEN[e][-1], Ht, target, f+1, tempEN[e][0], hprev)
+        # Calculate Ht - do pooling of 200x200 into 10x10
+        for e in xrange(len(tempEN)):
+            Ht = np.zeros((20, 20, hidden_size))
+            # Do calculation here!!!
+            ex = int(tempEN[e][5])
+            ey = int(tempEN[e][6])
+            # pool to 10x10
+            y = ey - 100
+            # filling Ht with neighbours hs
+            for n in entities[tempEN[e][0]].Neighbours:
+                i = 0
+                j = 0
+                for x in xrange(ex - 100, ex + 100, 10):
+                    for y in xrange(ey - 100, ey + 100, 10):
+                        #print i,j,x,y
+                        if tempE[n][5]>=x and tempE[n][5]<=x+10 and tempE[n][6]>=y and tempE[n][6]<=y+10 :
+                            Ht[i][j] += reduce(lambda x, y: x + y, entities[n].hs.tolist())             # Hierarchical weight induction !!!
+                        i += 1
+                    j += 1
 
-                            for param, dparam, mem in zip([wtMatrices[tempEN[e][-1]]['Wxh'], wtMatrices[tempEN[e][-1]]['Whh'], wtMatrices[tempEN[e][-1]]['Why'], entities[tempEN[e][0]].Wd, wtMatrices[tempEN[e][-1]]['bh'], wtMatrices[tempEN[e][-1]]['by']],
-                                                          [dWxh, dWhh, dWhy,dWd, dbh, dby],
-                                                          [wtMatrices[tempEN[e][-1]]['mWxh'], wtMatrices[tempEN[e][-1]]['mWhh'], wtMatrices[tempEN[e][-1]]['mWhy'], entities[tempEN[e][0]].mWd, wtMatrices[tempEN[e][-1]]['mbh'], wtMatrices[tempEN[e][-1]]['mby']]):
-                                mem += dparam * dparam
-                                param += -learning_rate * dparam #/ np.sqrt(mem + 1e-8)  # adagrad update
-                        else: # Testing
-                            if done == False :
-                                print "########################## TESTING : ################################"
-                                #with open(outpath+i[0]+'.txt','a') as outfile:
-                                #    outfile.write("\n########################## TESTING : ################################\n" )
-                                done = True
-                            loss, dWxh, dWhh, dWhy, dWd, dbh, dby, hprev, output =  entities[tempEN[e][0]].lossFunc([[output[0][0], output[1][0]]], tempEN[e][-1], Ht, target, f+1, i[0], hprev) # i[0]==tempEN[e][0]
+            # Apply Hierarchy on the pooled-matrix
+            #print Ht
 
-                            for param, dparam, mem in zip([wtMatrices[tempEN[e][-1]]['Wxh'], wtMatrices[tempEN[e][-1]]['Whh'], wtMatrices[tempEN[e][-1]]['Why'], entities[tempEN[e][0]].Wd, wtMatrices[tempEN[e][-1]]['bh'], wtMatrices[tempEN[e][-1]]['by']],
-                                                          [dWxh, dWhh, dWhy,dWd, dbh, dby],
-                                                          [wtMatrices[tempEN[e][-1]]['mWxh'], wtMatrices[tempEN[e][-1]]['mWhh'], wtMatrices[tempEN[e][-1]]['mWhy'], entities[tempEN[e][0]].mWd, wtMatrices[tempEN[e][-1]]['mbh'], wtMatrices[tempEN[e][-1]]['mby']]):
-                                mem += dparam * dparam
-                                param += -learning_rate * dparam #/ np.sqrt(mem + 1e-8)  # adagrad update
+            for c in xrange( 10 ):
+                m = float( c+1 )/ 10
+                for x in xrange( c, 20-c):
+                    Ht[c][x] *= m   # top-left-to-right
+                    Ht[19-c][x] *= m    # bottom-left-to-right
+                for y in xrange( c+1, 19-c ):
+                    Ht[y][c] *= m   #left-top-to-bottom
+                    Ht[y][19-c] *= m    #right-top-to-bottom
 
-		#print "Predicted: ",output," Target:", [tempEN[e][5], tempEN[e][6]]
+            #print Ht
+            #exit(0)
+
+            #  open next frame to get target and call loss function
+            #print "Entity : ", tempEN[e][0]
+            with open(path + str(f+1) + '.csv', 'r') as csvfile:
+                data = csv.reader(csvfile)
+                for i in data:
+                    # print i[0]=
+                    train = True
+                    if f > N :#*3/4:
+                        train = False
+                        #print "###################TESTING : #####################"
+                    epochs = 10
+                    for epoch in xrange(epochs):
+                        epochTrace = epoch
+                        global output
+                        if i[0]==tempEN[e][0]:
+                            target = [ int(i[5]), int(i[6])]
+
+                            inputlist = []
+                            # open previous 25 frames of the entity to send as input
+                            alllist = []
+                            with open(inputpath + str(tempEN[e][-1]) + tempEN[e][0] + '.csv','r') as infile:
+                                data = csv.reader(csvfile)
+                                for r in data:
+                                    alllist.append( [ int(r[7]), int(r[5]), int(r[6]) ] )
+                                    # now get 25 previous frame data
+                                    if alllist[-1][0]==f :
+                                        l = len(alllist)
+                                        minf = 24 if l-24>0 else l
+                                        #for frameno in reversed( xrange( f-minf, f ) ):
+                                        for j in reversed(xrange(minf)):
+                                            inputlist.append([alllist[l-j][1], alllist[l-j][2]])
+                            #append current frame too
+                            inputlist.append([int(tempEN[e][5]), int(tempEN[e][6])])
+                            if train == True: # Training
+                                loss, dWxh, dWhh, dWhy, dWd, dbh, dby, hprev, output =  entities[tempEN[e][0]].lossFunc(inputlist, tempEN[e][-1], Ht, target, f+1, tempEN[e][0], hprev)
+
+                                for param, dparam, mem in zip([wtMatrices[tempEN[e][-1]]['Wxh'], wtMatrices[tempEN[e][-1]]['Whh'], wtMatrices[tempEN[e][-1]]['Why'], entities[tempEN[e][0]].Wd, wtMatrices[tempEN[e][-1]]['bh'], wtMatrices[tempEN[e][-1]]['by']],
+                                                              [dWxh, dWhh, dWhy,dWd, dbh, dby],
+                                                              [wtMatrices[tempEN[e][-1]]['mWxh'], wtMatrices[tempEN[e][-1]]['mWhh'], wtMatrices[tempEN[e][-1]]['mWhy'], entities[tempEN[e][0]].mWd, wtMatrices[tempEN[e][-1]]['mbh'], wtMatrices[tempEN[e][-1]]['mby']]):
+                                    mem += dparam * dparam
+                                    param += -learning_rate * dparam #/ np.sqrt(mem + 1e-8)  # adagrad update
+                            else: # Testing
+                                if done == False :
+                                    print "########################## TESTING : ################################"
+                                    #with open(outpath+i[0]+'.txt','a') as outfile:
+                                    #    outfile.write("\n########################## TESTING : ################################\n" )
+                                    done = True
+                                loss, dWxh, dWhh, dWhy, dWd, dbh, dby, hprev, output =  entities[tempEN[e][0]].lossFunc([[output[0][0], output[1][0]]], tempEN[e][-1], Ht, target, f+1, i[0], hprev) # i[0]==tempEN[e][0]
+
+                                for param, dparam, mem in zip([wtMatrices[tempEN[e][-1]]['Wxh'], wtMatrices[tempEN[e][-1]]['Whh'], wtMatrices[tempEN[e][-1]]['Why'], entities[tempEN[e][0]].Wd, wtMatrices[tempEN[e][-1]]['bh'], wtMatrices[tempEN[e][-1]]['by']],
+                                                              [dWxh, dWhh, dWhy,dWd, dbh, dby],
+                                                              [wtMatrices[tempEN[e][-1]]['mWxh'], wtMatrices[tempEN[e][-1]]['mWhh'], wtMatrices[tempEN[e][-1]]['mWhy'], entities[tempEN[e][0]].mWd, wtMatrices[tempEN[e][-1]]['mbh'], wtMatrices[tempEN[e][-1]]['mby']]):
+                                    mem += dparam * dparam
+                                    param += -learning_rate * dparam #/ np.sqrt(mem + 1e-8)  # adagrad update
+
+    		#print "Predicted: ",output," Target:", [tempEN[e][5], tempEN[e][6]]
 
 
 
